@@ -1,0 +1,37 @@
+body { font-family: Arial, sans-serif; padding: 1em; background: #f9f9f9; text-align: center; }
+h1 { margin-bottom: 0.5em }
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+.ramo {
+  background: #ffffff;
+  border: 2px solid #4a90e2;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  min-height: 60px;
+}
+.ramo.done {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
+.ramo.locked {
+  background-color: #e0e0e0;
+  border-color: #aaa;
+  color: #666;
+  cursor: not-allowed;
+}
+.ramo .nota {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: rgba(255,255,255,0.9);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
